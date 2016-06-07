@@ -81,7 +81,7 @@ public class User {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((id.toString() == null) ? 0 : id.hashCode());
 		return result;
 	}
 
@@ -105,13 +105,13 @@ public class User {
 	@Override
 	public String toString() {
 		final StringBuilder builder = new StringBuilder();
-		builder.append("User: [id=").append(id).append(", name=").append(name).append("]");
+		builder.append("User: [id=").append(id.toString()).append(", name=").append(name).append("]");
 		return builder.toString();
 	}
 
 	@PostLoad
 	@PostPersist
-	private void loadIdExa() {
+	private void loadIdHex() {
 		if(id != null)
 			setIdHex(id.toString());
 	}
