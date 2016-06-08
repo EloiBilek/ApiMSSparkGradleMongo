@@ -48,3 +48,7 @@ Start the project with run in main class: /ApiMSSparkGradleMongo/src/main/java/c
 
 * http://sparkjava.com
 * https://github.com/google/guice
+
+Use for request/response test, Postman of Chrome plugin...
+
+![mssparktest](https://github.com/EloiBilek/eloibilek.github.io/raw/master/SGM_MS/mssparktest.png)
