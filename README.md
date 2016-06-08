@@ -3,19 +3,15 @@ Title: ApiMSSparkGradleMongo
 Description: API Microservice example using Spark, Guice, Gradle and MongDB
 Author: Eloi Bilek
 Tags: gradle, restful, api, java, spark, guice, mongodb
-Created: 2016 Abr 11
+Created: 2016 Jun 6
 
 ---
-
-http://sparkjava.com
-https://github.com/google/guice
-
 
 # ApiMSSparkGradleMongo
 ==============================
 API Microservice example using Spark, Guice, Gradle and MongDB
 
-It 's a very simple example of an RestFul API Micorservice, CRUD of User.
+It 's a very simple example of an RestFul API Microservice, CRUD of User.
 Using:
 * Java 8
 * Gradle 2.12
@@ -49,3 +45,6 @@ Or select task (assemble, build...) in Gradle Tasks perspective.
 The Spark is a micro web framework, with a Jetty server content embedded.
 
 Start the project with run in main class: /ApiMSSparkGradleMongo/src/main/java/com/apimssparkgradlemongo/init/Main.java
+
+* http://sparkjava.com
+* https://github.com/google/guice
