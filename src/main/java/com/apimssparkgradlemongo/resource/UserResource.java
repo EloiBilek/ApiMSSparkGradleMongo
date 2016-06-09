@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.apimssparkgradlemongo.controller;
+package com.apimssparkgradlemongo.resource;
 
 import static spark.Spark.delete;
 import static spark.Spark.get;
@@ -17,7 +17,7 @@ import com.google.inject.Inject;
 /**
  * @author eloibilek@gmail.com
  */
-public class UserController {
+public class UserResource {
 
 	@Inject
 	private IUserService userService;
@@ -28,7 +28,7 @@ public class UserController {
 
 	private static final String API_RESOURCE = "users";
 
-	public UserController() {
+	public UserResource() {
 
 		JsonTransformer jsonTransformer = new JsonTransformer();
 

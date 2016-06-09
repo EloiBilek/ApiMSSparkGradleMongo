@@ -8,7 +8,7 @@ import static spark.Spark.port;
 import java.util.logging.Logger;
 
 import com.apimssparkgradlemongo.config.AppModule;
-import com.apimssparkgradlemongo.controller.UserController;
+import com.apimssparkgradlemongo.resource.UserResource;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 /**
@@ -23,9 +23,9 @@ public class Main {
 		port(8080);
 
 		Injector injector = Guice.createInjector(new AppModule());
-		UserController controller = injector.getInstance(UserController.class);
+		UserResource controller = injector.getInstance(UserResource.class);
 
-		new UserController();
+		new UserResource();
 		
 		LOGGER.info("Init Jetty Server - ApiMSSparkGradleMongo On ");
 	}
