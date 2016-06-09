@@ -46,7 +46,13 @@ The Spark is a micro web framework, with a Jetty server content embedded.
 
 Start the project with run in main class: /ApiMSSparkGradleMongo/src/main/java/com/apimssparkgradlemongo/init/Main.java
 
+## Note 2
+The very cool of spark, is that it works fine with Java 8 lambda!!!
+
 * http://sparkjava.com
+
+...and guice is a simple and light framework, good to integrate with Microservices.
+
 * https://github.com/google/guice
 
 Use for request/response test, Postman of Chrome plugin...
