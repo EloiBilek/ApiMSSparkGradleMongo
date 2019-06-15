@@ -10,6 +10,9 @@ import com.apimssparkgradlemongo.model.service.impl.UserService;
 import com.google.inject.AbstractModule;
 
 /**
+ * Class to implement dependency injection, between interfaces and concrete
+ * classes.
+ * 
  * @author eloibilek@gmail.com
  */
 public class AppModule extends AbstractModule {

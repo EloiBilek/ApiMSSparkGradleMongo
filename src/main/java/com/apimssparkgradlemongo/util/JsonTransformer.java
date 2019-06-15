@@ -4,10 +4,10 @@ import com.google.gson.Gson;
 
 import spark.ResponseTransformer;
 
-/** 
- * @author eloi
+/**
+ * Transform response info, in json format.
  * 
- * Tranforme response info in json format.
+ * @author eloi
  */
 public class JsonTransformer implements ResponseTransformer {
 

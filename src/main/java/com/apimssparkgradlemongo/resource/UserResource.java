@@ -15,6 +15,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.inject.Inject;
 
 /**
+ * Controlle / Resource class to CRUD access through the use of Rest.
+ * 
  * @author eloibilek@gmail.com
  */
 public class UserResource {
@@ -22,15 +24,20 @@ public class UserResource {
 	@Inject
 	private IUserService userService;
 
+	/*
+	 * Other way (best), is use Properties file...
+	 */
 	private static final String API_CONTEXT = "ApiMSSparkGradleMongo/";
-
 	private static final String API_VERSION = "v1/";
-
 	private static final String API_RESOURCE = "users";
 
 	public UserResource() {
 
 		JsonTransformer jsonTransformer = new JsonTransformer();
+
+		/**
+		 * The methods, are implemented with Spark, using lambda expression of Java 8!!!
+		 */
 
 		// Get all
 		get(API_CONTEXT + API_VERSION + API_RESOURCE, (request, response) -> userService.findAll(),

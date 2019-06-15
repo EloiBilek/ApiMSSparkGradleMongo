@@ -15,6 +15,8 @@ import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 
 /**
+ * Config class to work MongoDB.
+ * 
  * @author eloibilek@gmail.com
  */
 @Singleton
